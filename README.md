@@ -21,3 +21,8 @@ Minecraft服务器代理，基于Java NIO实现，通常用于搭建加速IP
 4. 具体内容以<u>[GNU](https://www.gnu.org/)</u>的许可协议为准
 
 同时，所有您使用过程中的一切损失，由您自己承担，原作者不承担任何责任
+
+# 引用声明
+[SaussureaUtils](https://github.com/flowerinsnowdh/SaussureaUtils) By [flowerinsnowdh](https://github.com/flowerinsnowdh)
+
+本项目不涉及Minecraft源码
