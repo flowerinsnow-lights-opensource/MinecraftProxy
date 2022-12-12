@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!-- 服务器相关设置 -->
+    <server>
+        <!-- 绑定IP -->
+        <ip>0.0.0.0</ip>
+        <!-- 绑定端口 -->
+        <port>25565</port>
+    </server>
+    <!-- 连接相关设置 -->
+    <connection>
+        <!-- 接受模式
+        blacklist - 黑名单模式，不允许名单内的ID加入
+        whitelist - 白名单模式，只允许名单内的ID加入
+        -->
+        <mode>whitelist</mode>
+        <!-- 名单，黑名单和白名单共用这个列表，区分大小写！ -->
+        <list>
+            <user>flowerinsnow</user>
+            <user>mikoyo_kana</user>
+        </list>
+        <!-- 每次握手至多时间，超过该时间自动断开 (单位：毫秒) -->
+        <handshake_max_wait>30000</handshake_max_wait>
+        <!-- 目标服务器 -->
+        <target>
+            <!-- 如果接受，将用户连接到该服务器 -->
+            <!-- sendthis 为true的情况下，连接到目标服务器的数据头部也将是该IP -->
+            <accept port="25565" sendthis="false">mc.hypixel.net</accept>
+            <!-- 如果拒绝，将用户连接到该服务器
+            填写blackhole则会验证失败时直接断开连接
+            -->
+            <deny port="25565">127.0.0.1</deny>
+        </target>
+    </connection>
+</configuration>
